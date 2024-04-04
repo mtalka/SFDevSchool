@@ -1,0 +1,16 @@
+<template>
+  <div class="slds-card">
+    <div class="slds-p-around_medium">
+      <lightning-input
+        type="checkbox"
+        label="Show a cheery greeting"
+        name="greeting"
+        onchange={handleCheckboxChange}
+        checked={showGreeting}
+      ></lightning-input>
+      <template lwc:if={showGreeting}>
+        <c-rainbow-header greeting={greeting}></c-rainbow-header>
+      </template>
+    </div>
+  </div>
+</template>

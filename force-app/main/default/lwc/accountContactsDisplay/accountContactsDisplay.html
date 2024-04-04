@@ -1,0 +1,14 @@
+<template>
+    <template lwc:if={contacts}>
+        <lightning-combobox
+            name="contact"
+            label="Contacts"
+            value={selectedContactId}
+            options={options}
+            onchange={handleContactChange}>
+        </lightning-combobox>
+    </template>
+    <template lwc:if={selectedContactId}>
+        <c-contact-card record-id={selectedContactId}></c-contact-card>
+    </template>
+</template>

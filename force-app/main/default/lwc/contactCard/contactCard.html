@@ -1,0 +1,18 @@
+<template>
+  <lightning-card title={name} icon-name="standard:contact">
+    <div class="slds-m-around_medium">
+      <p>
+        <lightning-formatted-phone
+          value={phone}
+          title="Phone"
+        ></lightning-formatted-phone>
+      </p>
+      <p>
+        <lightning-formatted-email
+          value={email}
+          title="Email"
+        ></lightning-formatted-email>
+      </p>
+    </div>
+  </lightning-card>
+</template>
